@@ -1,0 +1,30 @@
+Tool이 있을 것이다…?
+PPT는 실제로 사용할 것만 정리하는 편이 좋다
+
+시간 많이 쓸 것. 과제 하는 것처럼 찾을 것.
+딥러닝 강의 내용 추가학습 할 것.
+
+42분 강의 시작
+
+Machine Learning.
+-> Input data를 통해 나름의 모델(블랙박스)를 만들어 낸다.
+-> Classification / Regression : 데이터 분류 / Input을 함수에 대응시켜 출력 (예측)
+
+Machine Learning Model
+-> 실제 현상 내부의 F(): underlying function (Probability Distribution Function)
+-> 모델 내부의 F`를 찾아내는 방식이 Machine learning
+-> 두 function (F, F`)사이에는 오차가 있을 수 밖에 없다.
+
+Example
+->Classification: function을 찾아내고 threshold를 찾아내어 기준으로 구분한다
+
+Supervised / Unsupervised / Semi-''
+-> Unsupervised: 군집화가 가능하다. clustering (Not classification)
+
+Training (Learning) Algorithm
+->Linear regression: F` (Machine learning)에는 Coefficient(계수)가 있음
+
+Error metrics
+-> 주로 사용하는 것: Root Mean Squared Error(검색.) 전체 오차의 평균.
+
+
