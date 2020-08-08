@@ -27,7 +27,15 @@ ML의 심층적인 구조가 딥러닝(흠...?)
 1 같은 경우는 여러가지 machine learning algorithm이 존재한다
 예시로는 직선(함수)를 찾고, threshold가 0.5 이상이냐 이하냐로 데이터를 구분할 수 있다
 *******************************************************************
-
+Training Algorithm의 핵심은 'Error metrics'이다.
+종류는
+1. Mean Absolute Error
+2. Root mean squared Error
+3. Coefficient of determination
+4. relative absolute error
+5. relative squared error
+이며, 이 중 1과 2, 특히 2번을 많이 사용한다.
+******************************************************************
 
  
 
