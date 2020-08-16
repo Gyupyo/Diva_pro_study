@@ -6,7 +6,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////
-// File Name : compare.cpp										     //
+// File Name : compare_onetime.cpp										     //
 // Date: 2020/08/15												     //
 // Os: Windows 10												     //
 // Author: Shin Gyu Pyo						 					     //
@@ -22,7 +22,7 @@ int main()
 	ofstream out;
 	string data_str, data_ch, ans_str, ans_ch, ans_label;
 
-	string label_in[] = { "½Ã°£", "Àå¼Ò", "±âÅ¸", "°íÀ¯¸íÀÏ¹İ" };
+	string label_in[] = { "ì‹œê°„", "ì¥ì†Œ", "ê¸°íƒ€", "ê³ ìœ ëª…ì¼ë°˜" };
 	string label_out[] = { "TM", "LC", "O", "GI" };
 	int label_size = 4;
 
@@ -79,7 +79,7 @@ int main()
 		answer.clear();
 		answer.seekg(0, ios::beg);
 	}
-	cout << "  " << count << " °³ÀÇ ´Ü¾î°¡ ¹ß°ßµÇ¾ú½À´Ï´Ù." << endl;
+	cout << "  " << count << " ê°œì˜ ë‹¨ì–´ê°€ ë°œê²¬ë˜ì—ˆìŠµë‹ˆë‹¤." << endl;
 	cout << "DONE, CHECK out.txt" << endl;
 	
 	answer.close();
