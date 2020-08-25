@@ -14,6 +14,7 @@ int main()
 	fstream data;
 	ofstream out_text, out_ne;
 	string line;
+	bool ne_flag = 0;
 
 	out_text.open("UCORPUS_TEXT.txt");
 	out_ne.open("UCORPUS_NE.txt");
@@ -36,12 +37,27 @@ int main()
 
 		while (getline(data, line))
 		{
-			out_text << line << endl;
-
+			ne_flag = 0;
+			string ne_str = line;
+			
 			while (getline(data, line))
 				if (line[0] == '@')
+				{
+					ne_flag = 1;
+					break;
+				}
+				else if (line == "")
 					break;
 
+			if (!ne_flag)
+			{
+				// skip a line ("")
+				getline(data, line);
+				continue;
+			}
+
+			out_text << ne_str << endl;
+			
 			while (getline(data, line))
 			{
 				if (line == "")
@@ -55,6 +71,7 @@ int main()
 			out_ne << endl;
 			// skip a line ("")
 			getline(data, line);
+
 		}
 		
 
