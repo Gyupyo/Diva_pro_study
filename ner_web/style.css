@@ -1,0 +1,49 @@
+table, th, td {
+    border:1px solid #ccc;
+    border-collapse: collapse;
+  }
+th, td { padding:10px 20px; }
+h1,h2,p{
+    text-align: center;
+}
+h1{
+    padding: 30px;
+    color: orange;
+}
+h2{
+    padding: 20px;
+    background-color: #ccc;
+    color: rgb(0, 98, 128);
+}
+h3{
+    padding: 10px;
+    color: orangered;
+}
+.accent{
+    border: 5px solid #000;
+    padding: 10px
+}
+#topMenu{
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #000;
+}
+#bottomMenu{
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #000;
+}
+/* nav{
+    width: 500px;
+    margin: 10px auto;
+    padding:10px;
+    border:1px;
+} */
+body{
+    font-family: "맑은 고딕","돋움", "굴림";
+}
+#clip-padding{
+    background-clip:padding-box;
+} 
