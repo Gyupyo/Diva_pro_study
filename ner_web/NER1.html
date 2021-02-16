@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVA PRO 개체명 서비스</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {background-image: url('cloud.jpg'); background-repeat:no-repeat; background-size:cover;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="NER2.html"> <h1>VIVA PRO 개체명 서비스</h1></a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                  <li><a href="#">서비스 소개</a></li>
+                  <li><a href="#">서비스 체험</a></li>
+                  <li><a href="#">서비스 문의</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>한화시스템</h1>
+            <h3>조우진,송현우,이원재,신규표,손승현</h3>
+            <p style="color:rgb(255, 0, 0)">본 웹사이트는 2020-21년 한화시스템과의 산학연계 프로젝트로 진행한 개체명 서비스 결과를 확인할 수 있는 웹사이트입니다</p>
+            <form>
+                <input type= "button" value="공지사항" onclick="window.open('notice.html')">
+            </form>
+            <form action="">
+                <fieldset>
+                  <legend><h2 class="accent">문장을 입력해주세요</h2></legend>
+                  <input type="hidden" value="문장 입력">
+                  <label for="InputSentence">문장:</label>
+                  <input type="text" id="InputSentence" size="150" autofocus placeholder="분석하고 싶은 문장을 입력해주세요" required>
+                  <!-- 위인지 아래인지는... 아래는 05/sol-2.html 볼것! <textarea id = "InputSentence" cols="200" rows="10" autofocus placeholder="분석하고 싶은 문장을 입력해주세요" required></textarea> -->
+                  <!-- <input type="submit" id="InputSentence" value="저장"> 위 쌍과 아래 쌍중 어느것이 맞는지는 모름-->
+                  <!-- <input type="reset" id="InputSentence" value="초기화"> -->
+                  <button type="submit">저장</button>
+                  <button type="reset">초기화</button>
+                </fieldset>
+                <fieldset>
+                  <legend><h2 class="accent">결과는 아래와 같습니다</h2></legend>
+                  <table>
+                    <caption>입력한 문장의 개체명 분석 결과</caption>
+                    <colgroup>
+                        <col style="background-color:#eee;">
+                        <col style="background-color:lightgrey">
+                        <col style="width:150px">
+                        <col style="width:150px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>개체명 종류</th>
+                            <th>개체명 개수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>AF</th>
+                            <th>1</th>
+                        </tr>
+                        <tr>
+                            <th>AM</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>CV</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>DT</th>
+                            <th>4</th>
+                        </tr>
+                        <tr>
+                            <th>EV</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <th>FD</th>
+                            <th>6</th>
+                        </tr>
+                        <tr>
+                            <th>LC</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>MT</th>
+                            <th>8</th>
+                        </tr>
+                        <tr>
+                            <th>OG</th>
+                            <th>9</th>
+                        </tr>
+                        <tr>
+                            <th>PS</th>
+                            <th>10</th>
+                        </tr>
+                        <tr>
+                            <th>PT</th>
+                            <th>11</th>
+                        </tr>
+                        <tr>
+                            <th>QT</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>TI</th>
+                            <th>13</th>
+                        </tr>
+                        <tr>
+                            <th>TM</th>
+                            <th>14</th>
+                        </tr>
+                        <tr>
+                            <th>TR</th>
+                            <th>15</th>
+                        </tr>
+                    </tbody>
+                </table>
+                </fieldset>
+                <fieldset>
+                    <legend><h2 class="accent">검색하고 싶은 단어를 입력해주세요</h2></legend>
+                    <label for="WordSearch">검색:</label>
+                    <input type="serach" id="WordSearch" size="40" placeholder="검색하고 싶은 단어를 입력해주세요">
+                    <input type="button" id="WordSearch" value="검색">
+                </fieldset>
+                <fieldset>
+                  <legend><h2 class="accent">시각화 결과는 아래와 같습니다</h2></legend>
+                  <!-- <label for = "Visualization"></label> -->
+                </fieldset>
+                <fieldset>
+                  <legend><h2 class="accent">원하는 개체명에 해당하는 단어를 확인해보세요</h2></legend>
+                  <label for = "WordCheck"> <p><b>원하는 개체명을 선택해주세요.(Choose the entities you want.)</b></p></label>
+                  <label><input type ="checkbox" value="AF">AF</label>
+                  <label><input type ="checkbox" value="AM">AM</label>
+                  <label><input type ="checkbox" value="CV">CV</label>
+                  <label><input type ="checkbox" value="DT">DT</label>
+                  <label><input type ="checkbox" value="EV">EV</label>
+                  <label><input type ="checkbox" value="FD">FD</label>
+                  <label><input type ="checkbox" value="LC">LC</label>
+                  <label><input type ="checkbox" value="MT">MT</label>
+                  <label><input type ="checkbox" value="OG">OG</label>
+                  <label><input type ="checkbox" value="PS">PS</label>
+                  <label><input type ="checkbox" value="PT">PT</label>
+                  <label><input type ="checkbox" value="QT">QT</label>
+                  <label><input type ="checkbox" value="TI">TI</label>
+                  <label><input type ="checkbox" value="TM">TM</label>
+                  <label><input type ="checkbox" value="TR">TR</label>
+                </fieldset>              
+            </form>
+        </main>
+        <footer>    
+            <section id="bottomMenu">
+              <ul>
+                <li><a href="#">프로젝트 소개</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">사이트맵</a></li>
+              </ul>
+            </section>   
+        </footer> 
+    </div>
+</body>
+</html> 
